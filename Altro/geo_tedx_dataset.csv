@@ -1,5 +1,5 @@
 idx,continent,nation,city
-8d2005ec35280deb6a438dc87b225f89,Europa,France,Paris
+8d2005ec35280deb6a438dc87b225f89,Europe,France,Paris
 b3072cd11f40eb57fd259555264476c6,Europe,Italy,Milan
 4adc9fee977fa04c357ed4c9b52aa3cc,Europe,Italy,Benevento
 59c641a72b495d522a7932145d6c02b3,Europe,Italy,Rieti
@@ -7,11 +7,11 @@ d227f2faf6ec185e54436d86463f499b,Europe,Italy,Bergamo
 fe612cc9179e038f97816fce891022a6,Europe,Italy,Bergamo
 6e67b6ad4cc6b420fe86fb975925fb32,Europe,Italy,Rome
 c593d7fd658f9ff5bc0c1aee2e9c917e,Europe,Italy,Milan
-8c1fad5ce0dab8908dee527f88697ce2,Europa,France,Paris
-5be32167a2dcc08470287a6029b7e4c5,Europa,France,Lione
-fa2133f1e5a865a5a5044777824fe147,Europa,France,Lione
-586938c5a53d9b916498a893248a5da3,Europa,France,Marseille
-09704782c2fd58e9198a4cc8f04e30d0,Europa,France,Nice
+8c1fad5ce0dab8908dee527f88697ce2,Europe,France,Paris
+5be32167a2dcc08470287a6029b7e4c5,Europe,France,Lione
+fa2133f1e5a865a5a5044777824fe147,Europe,France,Lione
+586938c5a53d9b916498a893248a5da3,Europe,France,Marseille
+09704782c2fd58e9198a4cc8f04e30d0,Europe,France,Nice
 d564abb00bb146ff75c7ed2d9b48aadc,North-America,U.S.A.,Kansas City
 9d3f203c5a8a124ec5a1b21fe3ad1842,North-America,U.S.A.,New York
 c8a830e0143916293557b7276958ac48,North-America,U.S.A.,Miami
