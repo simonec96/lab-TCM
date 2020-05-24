@@ -6,7 +6,7 @@
 import sys
 import json
 import pyspark
-from pyspark.sql.functions import col, collect_list, array_join
+from pyspark.sql.functions import col, collect_list, array_join,struct
 
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -59,7 +59,15 @@ tags_dataset = spark.read.option("header","true").csv(tags_dataset_path)
 
 ## READ NEXT DATASET
 next_dataset_path = "s3://unibg-tedx-data-stefanoscarpellini/watch_next_dataset.csv"
-next_dataset = spark.read.option("header","true").csv(next_dataset_path)
+next_dataset = spark.read.option("header","true").csv(next_dataset_path).dropDuplicates()
+
+## READ GEO DATASET
+geo_dataset_path = "s3://unibg-tedx-data-stefanoscarpellini/geo_tedx_dataset.csv"
+geo_dataset = spark.read.option("header","true").csv(geo_dataset_path)
+
+## READ VOTE DATASET
+vote_dataset_path = "s3://unibg-tedx-data-stefanoscarpellini/vote_user_dataset.csv"
+vote_dataset = spark.read.option("header","true").csv(vote_dataset_path)
 
 
 # CREATE THE AGGREGATE MODEL, ADD TAGS TO TEDX_DATASET
@@ -82,6 +90,25 @@ tedx_dataset_agg2 = tedx_dataset_agg.join(next_dataset_agg2, tedx_dataset_agg._i
 
 tedx_dataset_agg2.printSchema()
 
+# CREATE THE AGGREGATE MODEL, ADD GEO LOCATION TO TEDX_DATASET
+geo_dataset_agg3 = geo_dataset
+geo_dataset_agg3.printSchema()
+
+tedx_dataset_agg3 = tedx_dataset_agg2.join(geo_dataset_agg3, tedx_dataset_agg2._id == geo_dataset_agg3.idx, "left") \
+    .select(col("*"), struct(col("continent"),col("nation"),col("city")).alias("geo_area")) \
+    .drop("idx","continent","nation","city")
+
+tedx_dataset_agg3.printSchema()
+
+# CREATE THE AGGREGATE MODEL, ADD GEO LOCATION TO TEDX_DATASET
+vote_dataset_agg4 = vote_dataset.groupBy(col("idx_tedx")).agg(collect_list(struct(col("date"),col("time"),col("mail_user"),col("vote"))).alias("vote_user"))
+vote_dataset_agg4.printSchema()
+
+tedx_dataset_agg4 = tedx_dataset_agg3.join(vote_dataset_agg4, tedx_dataset_agg3._id == vote_dataset_agg4.idx_tedx, "left") \
+    .drop("idx_tedx")
+
+tedx_dataset_agg4.printSchema()
+
 mongo_uri = "mongodb://mycluster-shard-00-00-wo6at.mongodb.net:27017,mycluster-shard-00-01-wo6at.mongodb.net:27017,mycluster-shard-00-02-wo6at.mongodb.net:27017"
 
 write_mongo_options = {
@@ -93,7 +120,7 @@ write_mongo_options = {
     "ssl": "true",
     "ssl.domain_match": "false"}
 from awsglue.dynamicframe import DynamicFrame
-tedx_dataset_dynamic_frame = DynamicFrame.fromDF(tedx_dataset_agg2, glueContext, "nested")
+tedx_dataset_dynamic_frame = DynamicFrame.fromDF(tedx_dataset_agg4, glueContext, "nested")
 
 glueContext.write_dynamic_frame.from_options(tedx_dataset_dynamic_frame, connection_type="mongodb", connection_options=write_mongo_options)
 
