@@ -6,6 +6,9 @@ Body JSON:
 
 Result JSON:
 {
+    "_id": "8c1fad5ce0dab8908dee527f88697ce2",
+    "title": "History vs. Sigmund Freud",
+    "url": "https://www.ted.com/talks/todd_dufresne_history_vs_sigmund_freud",
     "next_idx": [
         "ba6ec23bd21321897864007e384b96f8",
         "bbc025842ca7c9dc5a5a74ab1dd19dd2",
@@ -14,6 +17,5 @@ Result JSON:
         "9d7e0fbafa4023ef33c5b2e34984b823",
         "9f7b1654e792011b7e1c6f4288520226",
         "43014f52663d1cf317a606b9c4dfe2fd"
-    ],
-    "_id": "8c1fad5ce0dab8908dee527f88697ce2"
+    ]
 }
