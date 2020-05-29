@@ -1,0 +1,19 @@
+GET: https://.../Get_Watch_Next_by_Idx
+Body JSON: 
+{
+	"id" : "8c1fad5ce0dab8908dee527f88697ce2"
+}
+
+Result JSON:
+{
+    "next_idx": [
+        "ba6ec23bd21321897864007e384b96f8",
+        "bbc025842ca7c9dc5a5a74ab1dd19dd2",
+        "e13408af724b61e69205333f09e16c6d",
+        "44996a194bdb3498a61f3cae3a5a1389",
+        "9d7e0fbafa4023ef33c5b2e34984b823",
+        "9f7b1654e792011b7e1c6f4288520226",
+        "43014f52663d1cf317a606b9c4dfe2fd"
+    ],
+    "_id": "8c1fad5ce0dab8908dee527f88697ce2"
+}

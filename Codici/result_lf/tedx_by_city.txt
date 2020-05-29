@@ -1,0 +1,17 @@
+GET: https://.../Get_Tedx_by_City
+Body JSON: 
+{
+	"citta":"Bergamo"
+}
+
+Result JSON:
+[
+    {
+        "title": "Can you solve the sea monster riddle?",
+        "url": "https://www.ted.com/talks/daniel_finkel_can_you_solve_the_sea_monster_riddle"
+    },
+    {
+        "title": "Why sleep matters now more than ever",
+        "url": "https://www.ted.com/talks/matt_walker_why_sleep_matters_now_more_than_ever"
+    }
+]

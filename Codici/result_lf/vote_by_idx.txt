@@ -1,0 +1,32 @@
+GET: https://.../Get_Vote_by_Idx
+Body JSON: 
+{
+	"id" : "8c1fad5ce0dab8908dee527f88697ce2"
+}
+
+Result JSON:
+{
+    "_id": "8c1fad5ce0dab8908dee527f88697ce2",
+    "title": "History vs. Sigmund Freud",
+    "url": "https://www.ted.com/talks/todd_dufresne_history_vs_sigmund_freud",
+    "vote_user": [
+        {
+            "date": "2020-02-10",
+            "time": "8:59:20",
+            "mail_user": "aathelstan15@ustream.tv",
+            "vote": "4"
+        },
+        {
+            "date": "2019-11-30",
+            "time": "22:59:32",
+            "mail_user": "oleteve1v@i2i.jp",
+            "vote": "1"
+        },
+        {
+            "date": "2019-06-21",
+            "time": "19:17:16",
+            "mail_user": "hsell2z@zdnet.com",
+            "vote": "1"
+        }
+    ]
+}

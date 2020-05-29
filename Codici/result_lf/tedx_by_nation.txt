@@ -1,0 +1,37 @@
+GET: https://.../Get_Tedx_by_Nation
+Body JSON: 
+{
+	"nazione": "Italy"
+}
+
+Result JSON:
+[
+    {
+        "title": "It's OK to feel overwhelmed. Here's what to do next",
+        "url": "https://www.ted.com/talks/elizabeth_gilbert_it_s_ok_to_feel_overwhelmed_here_s_what_to_do_next"
+    },
+    {
+        "title": "\"Accept Who I Am\"",
+        "url": "https://www.ted.com/talks/butterscotch_accept_who_i_am"
+    },
+    {
+        "title": "What it's really like to have autism",
+        "url": "https://www.ted.com/talks/ethan_lisi_what_it_s_really_like_to_have_autism"
+    },
+    {
+        "title": "Can you solve the sea monster riddle?",
+        "url": "https://www.ted.com/talks/daniel_finkel_can_you_solve_the_sea_monster_riddle"
+    },
+    {
+        "title": "Why sleep matters now more than ever",
+        "url": "https://www.ted.com/talks/matt_walker_why_sleep_matters_now_more_than_ever"
+    },
+    {
+        "title": "How to make pandemics optional, not inevitable",
+        "url": "https://www.ted.com/talks/sonia_shah_how_to_make_pandemics_optional_not_inevitable"
+    },
+    {
+        "title": "How you can help save the monarch butterfly — and the planet",
+        "url": "https://www.ted.com/talks/mary_ellen_hannibal_how_you_can_help_save_the_monarch_butterfly_and_the_planet"
+    }
+]
