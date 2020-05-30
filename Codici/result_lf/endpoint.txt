@@ -1,0 +1,11 @@
+https://swedoto5vk.execute-api.us-east-1.amazonaws.com/default/Get_Talks_By_Tag
+
+https://bh0ummbyvc.execute-api.us-east-1.amazonaws.com/default/Get_Watch_Next_by_Idx
+
+https://tt6k1vmlme.execute-api.us-east-1.amazonaws.com/default/Get_Tedx_by_Continent
+
+https://032p86exh5.execute-api.us-east-1.amazonaws.com/default/Get_Tedx_by_Nation
+
+https://99agjrkfc7.execute-api.us-east-1.amazonaws.com/default/Get_Tedx_by_City
+
+https://1dcr7j3514.execute-api.us-east-1.amazonaws.com/default/Get_Vote_by_Idx
