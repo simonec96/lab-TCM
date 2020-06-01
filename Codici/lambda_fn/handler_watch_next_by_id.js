@@ -3,6 +3,7 @@ const connect_to_db = require('./db');
 // GET BY TALK HANDLER
 
 const talk = require('./Talk');
+const talk_ref = require('./Talk');
 
 module.exports.get_by_idx = (event, context, callback) => {
     context.callbackWaitsForEmptyEventLoop = false;
@@ -22,14 +23,15 @@ module.exports.get_by_idx = (event, context, callback) => {
     
     connect_to_db().then(() => {
         console.log('=> get_all idx of next talks');
-        talk.findOne({_id:body.id},{next_idx:1})
-            //.populate({path:'next_idx',select:'title'})
-            .then(talks => {
+        talk.findOne({_id:body.id})
+            .then(talk_find => 
+                    talk_ref.find({_id:talk_find.next_idx},{title:1,url:1,details:1}).then(talked =>
+                    {
                     callback(null, {
                         statusCode: 200,
-                        body: JSON.stringify(talks)
+                        body: JSON.stringify(talked)
                     })
-                }
+                })
             )
             .catch(err =>
                 callback(null, {
