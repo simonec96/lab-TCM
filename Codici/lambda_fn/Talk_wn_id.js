@@ -1,10 +1,15 @@
 const mongoose = require('mongoose');
 
-const talk_schema = new mongoose.Schema({
-    _id: String,
-    next_idx: Array
-}, { collection: 'tedz_data' });
+const Schema=mongoose.Schema;
 
+const talk_schema = new Schema({
+    _id: String,
+    title: String,
+    url: String,
+    details:String,
+    main_author: String,
+    next_idx: ['talk_ref']
+}, { collection: 'tedz_data' });
 
 
 module.exports = mongoose.model('talk', talk_schema);
