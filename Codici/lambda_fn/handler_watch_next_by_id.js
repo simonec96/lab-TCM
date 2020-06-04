@@ -25,7 +25,7 @@ module.exports.get_by_idx = (event, context, callback) => {
         console.log('=> get_all idx of next talks');
         talk.findOne({_id:body.id})
             .then(talk_find => 
-                    talk_ref.find({_id:talk_find.next_idx},{title:1,url:1,details:1}).then(talked =>
+                    talk_ref.find({_id:talk_find.next_idx},'title main_speaker url details').then(talked =>
                     {
                     callback(null, {
                         statusCode: 200,
