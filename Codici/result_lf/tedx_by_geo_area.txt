@@ -10,6 +10,7 @@ Result JSON:
         "main_speaker": "Butterscotch",
         "title": "\"Accept Who I Am\"",
         "details": "Firing off her formidable ...",
+	"url": "https://www.ted.com/talks/butterscotch_accept_who_i_am",
         "geo_area": {
             "continent": "Europe",
             "nation": "Italy",
@@ -33,6 +34,7 @@ Result JSON:
         "main_speaker": "Butterscotch",
         "title": "\"Accept Who I Am\"",
         "details": "Firing off her formidable ...",
+	""url": "https://www.ted.com/talks/butterscotch_accept_who_i_am",
         "geo_area": {
             "nation": "Italy",
             "city": "Benevento"
