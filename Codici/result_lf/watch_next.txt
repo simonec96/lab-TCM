@@ -5,17 +5,22 @@ Body JSON:
 }
 
 Result JSON:
-{
-    "_id": "8c1fad5ce0dab8908dee527f88697ce2",
-    "title": "History vs. Sigmund Freud",
-    "url": "https://www.ted.com/talks/todd_dufresne_history_vs_sigmund_freud",
-    "next_idx": [
-        "ba6ec23bd21321897864007e384b96f8",
-        "bbc025842ca7c9dc5a5a74ab1dd19dd2",
-        "e13408af724b61e69205333f09e16c6d",
-        "44996a194bdb3498a61f3cae3a5a1389",
-        "9d7e0fbafa4023ef33c5b2e34984b823",
-        "9f7b1654e792011b7e1c6f4288520226",
-        "43014f52663d1cf317a606b9c4dfe2fd"
-    ]
-}
+[
+    {
+        "_id": "43014f52663d1cf317a606b9c4dfe2fd",
+        "main_speaker": "Alex Gendler",
+        "title": "History vs. Christopher Columbus",
+        "details": "Many people in the United States and ... ",
+        "url": "https://www.ted.com/talks/alex_gendler_history_vs_christopher_columbus"
+    },
+    {
+        "_id": "44996a194bdb3498a61f3cae3a5a1389",
+        "main_speaker": "Janja Lalich",
+        "title": "Why do people join cults?",
+        "details": "Today, there are thousands of cults ...",
+        "url": "https://www.ted.com/talks/janja_lalich_why_do_people_join_cults"
+    },
+    .
+    .
+    .
+]
