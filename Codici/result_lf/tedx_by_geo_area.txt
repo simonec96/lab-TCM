@@ -1,0 +1,66 @@
+GET: https://.../default/Get_Tedx_by_Geo_Area
+Body JSON: 
+{
+	"continente" : "Europe"
+}
+
+Result JSON:
+[
+    {
+        "main_speaker": "Butterscotch",
+        "title": "\"Accept Who I Am\"",
+        "details": "Firing off her formidable ...",
+        "geo_area": {
+            "continent": "Europe",
+            "nation": "Italy",
+            "city": "Benevento"
+        }
+    },
+    .
+    .
+    .
+]
+
+GET: https://.../default/Get_Tedx_by_Geo_Area
+Body JSON: 
+{
+	"nazione" : "Italy"
+}
+
+Result JSON:
+[
+    {
+        "main_speaker": "Butterscotch",
+        "title": "\"Accept Who I Am\"",
+        "details": "Firing off her formidable ...",
+        "geo_area": {
+            "nation": "Italy",
+            "city": "Benevento"
+        }
+    },
+    .
+    .
+    .
+]
+
+GET: https://.../default/Get_Tedx_by_Geo_Area
+Body JSON: 
+{
+	"citta" : "Bergamo"
+}
+
+Result JSON:
+[
+    {
+        "main_speaker": "Daniel Finkel",
+        "title": "Can you solve the sea monster riddle?",
+        "details": "According to legend, once every ...",
+        "url": "https://www.ted.com/talks/daniel_finkel_can_you_solve_the_sea_monster_riddle",
+        "geo_area": {
+            "city": "Bergamo"
+        }
+    }
+    .
+    .
+    .
+]
