@@ -7,7 +7,7 @@ const talk_schema = new Schema({
     title: String,
     url: String,
     details:String,
-    main_author: String,
+    main_speaker: String,
     next_idx: ['talk_ref']
 }, { collection: 'tedz_data' });
 
