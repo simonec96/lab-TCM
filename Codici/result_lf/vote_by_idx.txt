@@ -1,32 +1,221 @@
 GET: https://.../Get_Vote_by_Idx
 Body JSON: 
 {
-	"id" : "8c1fad5ce0dab8908dee527f88697ce2"
+	"id" : "8c1fad5ce0dab8908dee527f88697ce2",
+	"voto_limite" : 3
 }
 
 Result JSON:
 {
-    "_id": "8c1fad5ce0dab8908dee527f88697ce2",
     "title": "History vs. Sigmund Freud",
     "url": "https://www.ted.com/talks/todd_dufresne_history_vs_sigmund_freud",
-    "vote_user": [
-        {
-            "date": "2020-02-10",
-            "time": "8:59:20",
-            "mail_user": "aathelstan15@ustream.tv",
-            "vote": "4"
-        },
-        {
-            "date": "2019-11-30",
-            "time": "22:59:32",
-            "mail_user": "oleteve1v@i2i.jp",
-            "vote": "1"
-        },
-        {
-            "date": "2019-06-21",
-            "time": "19:17:16",
-            "mail_user": "hsell2z@zdnet.com",
-            "vote": "1"
-        }
-    ]
+    "main_speaker": "Todd Dufresne"
+vote_user:[{
+    "date": "2020-02-10",
+    "time": "8:59:20",
+    "mail_user": "aathelstan15@ustream.tv",
+    "vote": 4
+}{
+    "date": "2020-05-13",
+    "time": "14:10:41",
+    "mail_user": "lskotcher32@rakuten.co.jp",
+    "vote": 3
+}{
+    "date": "2019-06-14",
+    "time": "21:10:31",
+    "mail_user": "mpeagrim3c@kickstarter.com",
+    "vote": 3
+}{
+    "date": "2019-09-28",
+    "time": "16:26:22",
+    "mail_user": "cgribble3n@mac.com",
+    "vote": 4
+}{
+    "date": "2019-12-19",
+    "time": "9:12:05",
+    "mail_user": "rfyfield49@google.fr",
+    "vote": 4
+}{
+    "date": "2019-06-27",
+    "time": "6:40:35",
+    "mail_user": "fclerke4m@miitbeian.gov.cn",
+    "vote": 3
+}{
+    "date": "2020-05-11",
+    "time": "16:17:19",
+    "mail_user": "acurling5b@ning.com",
+    "vote": 4
+}{
+    "date": "2019-10-12",
+    "time": "22:52:27",
+    "mail_user": "mtumbridge5l@barnesandnoble.com",
+    "vote": 5
+}{
+    "date": "2019-08-26",
+    "time": "18:06:26",
+    "mail_user": "kdishman64@springer.com",
+    "vote": 5
+}{
+    "date": "2019-11-03",
+    "time": "2:10:01",
+    "mail_user": "doger66@soup.io",
+    "vote": 5
+}{
+    "date": "2019-12-24",
+    "time": "18:44:34",
+    "mail_user": "abalcers68@howstuffworks.com",
+    "vote": 5
+}{
+    "date": "2020-02-10",
+    "time": "10:58:17",
+    "mail_user": "ograybeal76@smugmug.com",
+    "vote": 5
+}{
+    "date": "2019-07-09",
+    "time": "15:49:23",
+    "mail_user": "drenowden7l@com.com",
+    "vote": 5
+}{
+    "date": "2019-08-24",
+    "time": "18:25:20",
+    "mail_user": "goherlihy7n@google.fr",
+    "vote": 3
+}{
+    "date": "2020-03-04",
+    "time": "23:25:01",
+    "mail_user": "gfrancescoccio7t@cocolog-nifty.com",
+    "vote": 4
+}{
+    "date": "2020-01-23",
+    "time": "21:01:31",
+    "mail_user": "dmclemon8u@bravesites.com",
+    "vote": 5
+}{
+    "date": "2019-06-14",
+    "time": "11:53:46",
+    "mail_user": "kbloodworth9h@berkeley.edu",
+    "vote": 4
+}{
+    "date": "2019-11-19",
+    "time": "1:40:29",
+    "mail_user": "gkittley9x@jugem.jp",
+    "vote": 4
+}{
+    "date": "2020-03-04",
+    "time": "2:35:52",
+    "mail_user": "acleoburyb2@smh.com.au",
+    "vote": 4
+}{
+    "date": "2020-02-01",
+    "time": "22:02:25",
+    "mail_user": "mdecarlob8@cisco.com",
+    "vote": 3
+}{
+    "date": "2019-06-11",
+    "time": "2:14:44",
+    "mail_user": "kwhittockbl@behance.net",
+    "vote": 3
+}{
+    "date": "2019-10-27",
+    "time": "12:48:19",
+    "mail_user": "jreisincz@desdev.cn",
+    "vote": 3
+}{
+    "date": "2020-03-25",
+    "time": "7:52:30",
+    "mail_user": "asamse2@purevolume.com",
+    "vote": 5
+}{
+    "date": "2019-09-01",
+    "time": "17:39:17",
+    "mail_user": "csextiefj@comcast.net",
+    "vote": 3
+}{
+    "date": "2019-08-02",
+    "time": "21:42:20",
+    "mail_user": "cscotchbrookg1@w3.org",
+    "vote": 3
+}{
+    "date": "2020-02-12",
+    "time": "0:53:26",
+    "mail_user": "fmcclintong2@yale.edu",
+    "vote": 3
+}{
+    "date": "2019-08-24",
+    "time": "22:00:26",
+    "mail_user": "bgoronigb@time.com",
+    "vote": 5
+}{
+    "date": "2019-11-21",
+    "time": "23:37:20",
+    "mail_user": "mruttyhk@blogtalkradio.com",
+    "vote": 3
+}{
+    "date": "2019-08-31",
+    "time": "5:17:29",
+    "mail_user": "sbumhl@desdev.cn",
+    "vote": 3
+}{
+    "date": "2019-09-15",
+    "time": "22:32:10",
+    "mail_user": "jmccartanhs@cargocollective.com",
+    "vote": 5
+}{
+    "date": "2019-08-15",
+    "time": "5:11:20",
+    "mail_user": "saimsonib@jugem.jp",
+    "vote": 4
+}{
+    "date": "2020-02-19",
+    "time": "3:58:23",
+    "mail_user": "vdevitaif@netlog.com",
+    "vote": 3
+}{
+    "date": "2019-06-06",
+    "time": "11:39:52",
+    "mail_user": "ggilstonim@mayoclinic.com",
+    "vote": 3
+}{
+    "date": "2020-01-20",
+    "time": "17:28:00",
+    "mail_user": "bwhardleykk@t-online.de",
+    "vote": 5
+}{
+    "date": "2019-07-03",
+    "time": "18:49:42",
+    "mail_user": "bfeirnlq@narod.ru",
+    "vote": 4
+}{
+    "date": "2019-12-27",
+    "time": "21:05:48",
+    "mail_user": "lchantrellm7@slideshare.net",
+    "vote": 5
+}{
+    "date": "2019-06-22",
+    "time": "14:14:26",
+    "mail_user": "bkendredmr@prlog.org",
+    "vote": 5
+}{
+    "date": "2020-02-11",
+    "time": "1:51:28",
+    "mail_user": "shartrickod@hud.gov",
+    "vote": 5
+}{
+    "date": "2019-07-31",
+    "time": "23:22:21",
+    "mail_user": "yspallsol@tamu.edu",
+    "vote": 4
+}{
+    "date": "2019-06-30",
+    "time": "23:00:45",
+    "mail_user": "wmeneeroy@gnu.org",
+    "vote": 3
+}{
+    "date": "2019-08-03",
+    "time": "16:47:25",
+    "mail_user": "ewippermannqj@istockphoto.com",
+    "vote": 4
+}]
+    "media voti": 3.2280701754385963,
+    "voti totali": 57
 }
